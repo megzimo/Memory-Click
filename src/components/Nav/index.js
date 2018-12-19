@@ -1,14 +1,19 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
+import React from "react";
+import PropTypes from "prop-types";
+import { withStyles } from "@material-ui/core/styles";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
+// import Score from "..Score";
+// import "./style.css";
 
 const styles = {
   root: {
-    flexGrow: 1,
+    flexGrow: 1
   },
+  nav: {
+    color: "#e8232d"
+  }
 };
 
 function SimpleAppBar(props) {
@@ -24,11 +29,12 @@ function SimpleAppBar(props) {
         </Toolbar>
       </AppBar>
     </div>
+    
   );
 }
 
 SimpleAppBar.propTypes = {
-  classes: PropTypes.object.isRequired,
+  classes: PropTypes.object.isRequired
 };
 
 export default withStyles(styles)(SimpleAppBar);

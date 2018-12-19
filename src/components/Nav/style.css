@@ -1,0 +1,11 @@
+.score{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 25%;
+}
+
+.high-score{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 30%;
+}
