@@ -25,50 +25,123 @@
     },
     {
         "id": 5,
-        "name" : "jen",
-        "img": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/0/0a/Jen.jpg/revision/latest?cb=20170227082804",
+        "name" : "helen",
+        "img": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/c/c1/Helen.jpg/revision/latest?cb=20160425093611",
         "selected": false
     },
     {
         "id": 6,
-        "name" : "jen",
-        "img": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/0/0a/Jen.jpg/revision/latest?cb=20170227082804",
+        "name" : "boo boo",
+        "img": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/6/6f/Boo_Boo_-_01.jpg/revision/latest?cb=20150810111921",
         "selected": false
     },
     {
         "id": 7,
-        "name" : "jen",
-        "img": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/0/0a/Jen.jpg/revision/latest?cb=20170227082804",
+        "name" : "matt",
+        "img": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/d/dc/Matt-2.jpg/revision/latest?cb=20150810152613",
         "selected": false
     },
     {
         "id": 8,
-        "name" : "jen",
-        "img": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/0/0a/Jen.jpg/revision/latest?cb=20170227082804",
+        "name" : "logan",
+        "img": "https://static.tvtropes.org/pmwiki/pub/images/logan_bush.jpg",
         "selected": false
     },
     {
         "id": 9,
-        "name" : "jen",
-        "img": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/0/0a/Jen.jpg/revision/latest?cb=20170227082804",
+        "name" : "rudy",
+        "img": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/8/8d/Regular-Rudy.jpg/revision/latest?cb=20160410170923",
         "selected": false
     },
     {
         "id": 10,
-        "name" : "jen",
-        "img": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/0/0a/Jen.jpg/revision/latest?cb=20170227082804",
+        "name" : "kurt",
+        "img": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/1/1e/Upskirt_kurt.jpg/revision/latest?cb=20160220111418",
         "selected": false
     },
     {
         "id": 11,
-        "name" : "jen",
-        "img": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/0/0a/Jen.jpg/revision/latest?cb=20170227082804",
+        "name" : "louise",
+        "img": "http://images6.fanpop.com/image/photos/38500000/Louise-Belcher-bobs-burgers-38510375-1106-1440.jpg",
         "selected": false
     },    
     {
         "id": 12,
-        "name" : "jen",
-        "img": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/0/0a/Jen.jpg/revision/latest?cb=20170227082804",
+        "name" : "gloria",
+        "img": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/a/a0/Gloria.jpg/revision/latest/scale-to-width-down/2000?cb=20150709171730",
+        "selected": false
+    },
+    {
+        "id": 13,
+        "name": "mudflap",
+        "img": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/e/e6/Mudflap.jpg/revision/latest?cb=20150726161649",
+        "selected": false
+    },
+    {
+        "id": 14,
+        "name" : "rupa",
+        "img": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/9/99/Rupa.jpg/revision/latest?cb=20160426154355",
+        "selected": false
+    },
+    {
+        "id": 15,
+        "name" : "linda",
+        "img": "https://img.fireden.net/co/image/1449/58/1449582987731.jpg",
+        "selected": false
+    },
+    {
+        "id": 16,
+        "name" : "barbara bunkley",
+        "img": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/7/71/Barbara_Bunkley.jpg/revision/latest?cb=20150729162513",
+        "selected": false
+    },
+    {
+        "id": 17,
+        "name" : "labonz",
+        "img": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/1/1c/Ms_LaBonz.jpg/revision/latest?cb=20150609171524",
+        "selected": false
+    },
+    {
+        "id": 18,
+        "name" : "frond",
+        "img": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/5/57/Mr_Frond_-_2.jpg/revision/latest?cb=20150727151439",
+        "selected": false
+    },
+    {
+        "id": 19,
+        "name" : "bob",
+        "img": "https://vignette.wikia.nocookie.net/p__/images/2/20/Bob-Belcher-bobs-burgers-38510373-860-1440.jpg/revision/latest?cb=20160310203230&path-prefix=protagonist",
+        "selected": false
+    },
+    {
+        "id": 20,
+        "name" : "gene",
+        "img": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/f/fb/Gene-1.jpg/revision/latest?cb=20150727145612",
+        "selected": false
+    },
+    {
+        "id": 21,
+        "name" : "teddy",
+        "img": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/5/51/Teddy-1.jpg/revision/latest?cb=20150727151217",
+        "selected": false
+    },
+    {
+        "id": 22,
+        "name" : "tina",
+        "img": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/3/3e/Tina-7.jpg/revision/latest/scale-to-width-down/169?cb=20150727150852",
+        "selected": false
+    },
+    {
+        "id": 23,
+        "name" : "fischoeder",
+        "img": "https://i.imgur.com/s3mTiZG.jpg",
+        "selected": false
+    },
+    {
+        "id": 24,
+        "name" : "mort",
+        "img": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/2/25/Mort-3.jpg/revision/latest?cb=20150727151116",
         "selected": false
     }
 ]
+
