@@ -10,22 +10,40 @@ class App extends Component {
     this.state = {
       score: 0,
       high: 0,
-      selected: []
+      selected: false
     };
   }
+
+ // shuffle components inside componentDidUpdate() via shuffleInstance.resetItems()???
+
+//  Fisher-Yates Shuffling Algorith
+shuffle = (charcard) => {
+  var i, j, temp;
+  for ((i = charcard.length -1); i > 0; i-- ){
+    j = Math.floor(Math.random() * (i + 1));
+    temp = charcard[i];
+    charcard[i] = charcard[j];
+    charcard[j] = temp;
+  }
+}
+
+handleClick = () => {
+  this.shuffle(charcard);
+  this.setState({
+    selected: true
+  })
+}
 
   render() {
     return (
       <div className="wrapper">
         <Nav />
-
         {charcard.map(card => (
           <Card
             id={card.id}
             key={card.id}
             name={card.name}
             img={card.img}
-            selected={card.selected}
             handleClick={this.handleClick}
           />
         ))}
