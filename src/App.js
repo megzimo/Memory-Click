@@ -10,13 +10,11 @@ class App extends Component {
     this.state = {
       score: 0,
       high: 0,
-      selected: false
+      selected: []
     };
   }
 
- // shuffle components inside componentDidUpdate() via shuffleInstance.resetItems()???
-
-//  Fisher-Yates Shuffling Algorith
+//  Fisher-Yates Shuffling Algorithm
 shuffle = (charcard) => {
   var i, j, temp;
   for ((i = charcard.length -1); i > 0; i-- ){
@@ -27,11 +25,19 @@ shuffle = (charcard) => {
   }
 }
 
-handleClick = () => {
+handleClick = id => {
   this.shuffle(charcard);
-  this.setState({
-    selected: true
-  })
+  if(this.state.selected.includes(id) ){
+    this.setState({
+      selected: []
+    });
+    alert("You're my kid, and i love you, but you're terrible.")
+  }
+  else {
+    this.setState({
+      selected: [ ...this.state.selected, id]
+    })
+  }
 }
 
   render() {
