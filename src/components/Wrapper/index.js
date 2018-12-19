@@ -1,14 +1,15 @@
-import React, { Component } from "react";
-import "./style.css";
+// import React, { Component } from "react";
+// import Score from "./Score"
+// import "./style.css";
 
-class Wrapper extends Component {
-  render() {
-    return (
-      <div className="wrapper">
-      <Score />
-      </div>
-    );
-  }
-}
+// class Wrapper extends Component {
+//   render() {
+//     return (
+//       <div className="wrapper">
+//       <Score />
+//       </div>
+//     );
+//   }
+// }
 
-export default Wrapper;
+// export default Wrapper;

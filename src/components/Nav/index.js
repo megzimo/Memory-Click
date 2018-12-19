@@ -4,15 +4,13 @@ import { withStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-// import Score from "..Score";
-// import "./style.css";
+import Grid from "@material-ui/core/Grid";
+import Score from "../Score";
+import "./style.css";
 
 const styles = {
   root: {
     flexGrow: 1
-  },
-  nav: {
-    color: "#e8232d"
   }
 };
 
@@ -20,16 +18,29 @@ function SimpleAppBar(props) {
   const { classes } = props;
 
   return (
-    <div className={classes.root}>
-      <AppBar position="static" color="default">
-        <Toolbar>
-          <Typography variant="h6" color="inherit">
-            Memory Jumble
-          </Typography>
-        </Toolbar>
-      </AppBar>
+    <div className="navbar">
+      <div className={classes.root}>
+        <AppBar position="static" color="default" style={{backgroundColor:"#e8232d"}}>
+          <Toolbar>
+            <Typography variant="h6" color="inherit">
+              <Grid container spacing={40}>
+                <Grid item s={15}>
+                  <img
+                    alt="bob's burgers"
+                    src="https://assets.foxdcg.com/dpp-uploaded/images/bobs-burgers/bobs-burgers_09/logo-tab.png"
+                    id="logo"
+                  />
+                </Grid>
+                <Grid item s={25} id="tag">
+                  Memory Jumble
+                </Grid>
+              </Grid>
+            </Typography>
+          </Toolbar>
+        </AppBar>
+      </div>
+      <Score />
     </div>
-    
   );
 }
 

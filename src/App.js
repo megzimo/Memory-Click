@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Nav from "./components/Nav";
 import Card from "./components/Card";
 import charcard from "./charcard.json";
-import "./App.css"
+import "./App.css";
 
 class App extends Component {
   constructor(props) {
@@ -14,14 +14,10 @@ class App extends Component {
     };
   }
 
-  // scoreCount = id => {
-  // }
-
   render() {
     return (
-
       <div className="wrapper">
-        {/* <Nav /> */}
+        <Nav />
 
         {charcard.map(card => (
           <Card
@@ -32,11 +28,10 @@ class App extends Component {
             selected={card.selected}
             handleClick={this.handleClick}
           />
-          ))}
+        ))}
       </div>
     );
   }
 }
-
 
 export default App;
