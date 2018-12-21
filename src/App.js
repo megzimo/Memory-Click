@@ -37,6 +37,7 @@ handleClick = id => {
     this.setState({
       selected: [ ...this.state.selected, id]
     })
+    console.log(this.state.selected)
   }
 }
 
