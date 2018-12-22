@@ -42,11 +42,14 @@ function SimpleAppBar(props) {
       <div className="scoreboard">
       {props.children}
       <Grid container spacing={40}>
-        <Grid item md={6}>
+        <Grid item md={4}>
           <div className="score">Score Board: {props.score}</div>
         </Grid>
-        <Grid item md={6}>
+        <Grid item md={4}>
           <div className="high-score">High Score: {props.high}</div>
+        </Grid>
+        <Grid item md={4}>
+          <div className="message">{props.msg}</div>
         </Grid>
       </Grid>
     </div>

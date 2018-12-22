@@ -10,6 +10,7 @@ class App extends Component {
     this.state = {
       score: 0,
       high: 0,
+      msg: "Click an image - but don't choose the same one twice!",
       selected: []
     };
   }
@@ -29,9 +30,10 @@ handleClick = id => {
   this.shuffle(charcard);
   if(this.state.selected.includes(id) ){
     this.setState({
-      selected: []
+      selected: [],
+      msg:"You're my kid, and i love you, but you're terrible."
     });
-    alert("You're my kid, and i love you, but you're terrible.");
+    // alert("You're my kid, and i love you, but you're terrible.");
     this.reset();
   }
   else {
@@ -56,10 +58,11 @@ score = () => {
 
 // determine winner
   if( scoreUpdate === charcard.length ){
-    alert("YOU WON!!! Wow. Daryl would be so proud.")
+    // alert("YOU WON!!! Wow. Daryl would be so proud.")
     this.setState({
       score: 0,
-      selected: []
+      selected: [],
+      msg: "YOU WON!!! Wow. Daryl would be so proud."
     })
   }
 }
@@ -75,6 +78,7 @@ reset = () => {
     return (
       <div className="wrapper">
         <Nav 
+        msg={this.state.msg}
         score={this.state.score}
         high={this.state.high}
         />
