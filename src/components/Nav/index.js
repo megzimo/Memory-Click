@@ -5,7 +5,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
-import Score from "../Score";
+// import Score from "../Score";
 import "./style.css";
 
 const styles = {
@@ -39,7 +39,17 @@ function SimpleAppBar(props) {
           </Toolbar>
         </AppBar>
       </div>
-      <Score />
+      <div className="scoreboard">
+      {props.children}
+      <Grid container spacing={40}>
+        <Grid item md={6}>
+          <div className="score">Score Board: {props.score}</div>
+        </Grid>
+        <Grid item md={6}>
+          <div className="high-score">High Score: {props.high}</div>
+        </Grid>
+      </Grid>
+    </div>
     </div>
   );
 }

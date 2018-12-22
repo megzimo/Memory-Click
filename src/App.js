@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Nav from "./components/Nav";
 import Card from "./components/Card";
+import Container from "./components/Container"
 import charcard from "./charcard.json";
-import "./App.css";
 
 class App extends Component {
   constructor(props) {
@@ -31,20 +31,54 @@ handleClick = id => {
     this.setState({
       selected: []
     });
-    alert("You're my kid, and i love you, but you're terrible.")
+    alert("You're my kid, and i love you, but you're terrible.");
+    this.reset();
   }
   else {
     this.setState({
       selected: [ ...this.state.selected, id]
     })
-    console.log(this.state.selected)
+    this.score();
   }
+}
+
+score = () => {
+  const { score, high } = this.state;
+  let scoreUpdate = score + 1;
+  let newHighScore = scoreUpdate > high ? scoreUpdate : high;
+  if( scoreUpdate > high ){
+    scoreUpdate = newHighScore
+  }
+  this.setState({
+    score: scoreUpdate,
+    high: newHighScore
+  })
+
+// determine winner
+  if( scoreUpdate === charcard.length ){
+    alert("YOU WON!!! Wow. Daryl would be so proud.")
+    this.setState({
+      score: 0,
+      selected: []
+    })
+  }
+}
+
+reset = () => {
+  this.setState({
+    score: 0,
+    selected: []
+  })
 }
 
   render() {
     return (
       <div className="wrapper">
-        <Nav />
+        <Nav 
+        score={this.state.score}
+        high={this.state.high}
+        />
+        <Container>
         {charcard.map(card => (
           <Card
             id={card.id}
@@ -54,6 +88,7 @@ handleClick = id => {
             handleClick={this.handleClick}
           />
         ))}
+        </Container>
       </div>
     );
   }

@@ -1,0 +1,31 @@
+.container {
+    padding-top: 50px;
+    background: #f4e123;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px;
+    justify-content: space-around;
+    align-content: flex-start;
+    overflow: auto;
+} 
+
+@media screen and (max-width: 640px){
+    .container{
+        padding-top: 125px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        padding-top: 125px;
+    }
+
+}
+
+@media screen and (max-width: 980px){
+    .container{
+        padding-top: 125px;
+    }
+
+}
