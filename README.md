@@ -9,7 +9,7 @@ This application is a game meant to test your memory. Each time you choose a car
 - CSS
 - Material UI
 
-![bobs-burgers-jumble](/public/images/bbjumble)
+![bobs-burgers-jumble](/public/images/bbjumble.gif)
 
 ## Try It Yourself!
-You can play the game here(https://bobs-burgers-jumble.herokuapp.com/), or clone it and run via create-react-app)
+You can play the game [here](https://bobs-burgers-jumble.herokuapp.com/)  or clone it and run via create-react-app)
