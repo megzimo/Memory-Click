@@ -12,7 +12,12 @@
     margin-left: 25px;
 }
 
-@media screen and (min-width: 640px) {
+header.AppBarMUI{
+    height: 75px !important;
+    padding-top: 1% !important;
+   }
+
+@media screen and (max-width: 640px) {
     #tag {
         font-family: "Frijole";
         color: white;
@@ -20,6 +25,10 @@
         font-size: 30px;
         justify-content: center;
     }
+    header.AppBarMUI{
+        height: 375px !important;
+        padding-top: 0 !important;
+       }
 }
 
 @media screen and (max-width: 768px) {
@@ -31,6 +40,10 @@
         justify-content: center;
         margin-left: 100px;
     }
+    header.AppBarMUI{
+        height: 175px !important;
+        padding-top: 1% !important;
+       }
 }
 
 @media screen and (min-width: 980px) {
@@ -48,6 +61,8 @@
     display: flex;
     justify-content: space-around;
     padding-top: 1em;
+    padding-left: 1em;
     color: rgba(231, 33, 43, .9);
     font-weight: bold;
 }
+

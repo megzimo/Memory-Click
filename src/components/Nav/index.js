@@ -2,10 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
-// import Score from "../Score";
 import "./style.css";
 
 const styles = {
@@ -20,9 +17,7 @@ function SimpleAppBar(props) {
   return (
     <div className="navbar">
       <div className={classes.root}>
-        <AppBar position="static" color="default" style={{backgroundColor:"#e8232d"}}>
-          <Toolbar>
-            <Typography variant="h6" color="inherit">
+        <AppBar position="static" color="default" className="AppBarMUI" style={{backgroundColor:"#e8232d"}}>
               <Grid container spacing={40}>
                 <Grid item s={15}>
                   <img
@@ -35,8 +30,6 @@ function SimpleAppBar(props) {
                   Memory Jumble
                 </Grid>
               </Grid>
-            </Typography>
-          </Toolbar>
         </AppBar>
       </div>
       <div className="scoreboard">
